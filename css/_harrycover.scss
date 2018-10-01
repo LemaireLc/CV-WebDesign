@@ -716,6 +716,16 @@ header {
           padding-right: .625rem;
       }
 }
+
+h3.morelitbit {
+  @include font(1rem, 400, 1rem, #fff);
+
+  &::before {
+    content: url('../img/site/puce.svg');
+    padding-right: .625rem;
+}
+}
+
 h3.morelit {
   @include font(1.2rem, 500, 1.2rem, #fff);
 
@@ -791,6 +801,7 @@ h3.morelit {
 
     &:hover {
       opacity: 0.9;
+
     }
 
     h3,
@@ -811,6 +822,30 @@ h3.morelit {
       margin: auto;
     }
   }
+
+}
+.workresponsiv {
+  background-color: #000000;
+
+  h2 {
+    @include font(2.1875rem, 800, 2.1875rem, #fff);
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 4.6875rem;
+    @include font(1.25rem, 400, 1.25rem, #CCC);
+    text-align: center;
+  }
+  figure {
+    position: relative;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 100%;
+      }
 
 }
 
